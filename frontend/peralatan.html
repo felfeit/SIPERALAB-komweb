@@ -1,60 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daftar peralatan SIPERALAB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Daftar peralatan SIPERALAB" />
     <title>SIPERALAB | Peralatan</title>
 
-    <link rel="stylesheet" href="/src/styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/siperalab-favicon.png">
-</head>
-<body>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/siperalab-favicon.png" />
+  </head>
+  <body>
     <header class="site-header">
-        <a href="/" class="brand">SIPERALAB</a>
-        <nav aria-label="Navigasi utama">
-            <a href="/">Beranda</a>
-            <a href="/peralatan.html" class="active">Peralatan</a>
-            <a href="/tentang.html">Tentang</a>
-        </nav>
+      <a href="/" class="brand">SIPERALAB</a>
+      <nav aria-label="Navigasi utama">
+        <a href="/">Beranda</a>
+        <a href="/peralatan.html">Peralatan</a>
+        <a href="/tentang.html">Tentang</a>
+        <a href="/peminjaman.html">Ajukan Peminjaman</a>
+      </nav>
     </header>
 
     <main>
-        <h1 class="hero-title">Daftar Peralatan</h1>
+      <h1 class="hero-title">Katalog Peralatan</h1>
 
-        <section class="card-grid">
-            <div class="card">
-                <div class="card-img-container">
-                    <img src="/images/laptop.jpg" alt="Gambar Laptop" class="card-img">
-                </div>
-                <h3>Laptop</h3>
-                <p>Tersedia: <strong>8 Unit</strong></p>
-            </div>
-            <div class="card">
-                <div class="card-img-container">
-                    <img src="/images/router.jpg" alt="Gambar Router" class="card-img">
-                </div>
-                <h3>Router</h3>
-                <p>Tersedia: <strong>12 Unit</strong></p>
-            </div>
-            <div class="card">
-                <div class="card-img-container">
-                    <img src="/images/kamera.jpg" alt="Gambar Kamera" class="card-img">
-                </div>
-                <h3>Kamera</h3>
-                <p>Tersedia: <strong>5 Unit</strong></p>
-            </div>
-        </section>
+      <section aria-labelledby="judul-katalog">
+        <h2 id="judul-katalog" class="section-title">
+          Peralatan yang dapat dipinjam
+        </h2>
 
-        <div class="test-container">
-            <a href="/404.html" class="btn-primary">Uji Coba Halaman 404</a>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Multimeter Digital</h3>
+            <figure class="card-img-container">
+              <img
+                src="/images/multimeter.png"
+                alt="Multimeter digital untuk pengukuran listrik"
+                class="card-img"
+              />
+              <figcaption class="sr-only">
+                Alat ukur tegangan, arus, dan resistansi.
+              </figcaption>
+            </figure>
+            <p><strong>Stok:</strong> 6 unit</p>
+            <p><strong>Kondisi:</strong> Baik</p>
+          </article>
+
+          <article class="card">
+            <h3>Router</h3>
+            <figure class="card-img-container">
+              <img
+                src="/images/router.png"
+                alt="Router jaringan untuk praktikum konfigurasi jaringan"
+                class="card-img"
+              />
+              <figcaption class="sr-only">
+                Perangkat jaringan untuk latihan routing dan konektivitas.
+              </figcaption>
+            </figure>
+            <p><strong>Stok:</strong> 12 unit</p>
+            <p><strong>Kondisi:</strong> Baik</p>
+          </article>
+
+          <article class="card">
+            <h3>Kamera</h3>
+            <figure class="card-img-container">
+              <img
+                src="/images/kamera.png"
+                alt="Kamera digital untuk dokumentasi kegiatan laboratorium"
+                class="card-img"
+              />
+              <figcaption class="sr-only">
+                Kamera digital untuk dokumentasi dan kebutuhan praktikum.
+              </figcaption>
+            </figure>
+            <p><strong>Stok:</strong> 5 unit</p>
+            <p><strong>Kondisi:</strong> Baik</p>
+          </article>
         </div>
+      </section>
     </main>
 
     <footer>
-        <h3><a href="/">Kembali ke beranda</a></h3>
+      <p><a href="/">Kembali ke beranda</a></p>
+      <p><a href="/peminjaman.html">Lanjut ke formulir peminjaman</a></p>
     </footer>
 
     <script type="module" src="/src/main.js"></script>
-</body>
+  </body>
 </html>
